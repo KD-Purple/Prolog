@@ -1,0 +1,5 @@
+hace_reir("Son como ninos").
+hace_llorar("Diario de una pasion").
+
+comedia(X):- hace_reir(X).
+triste(X):- hace_llorar(X).

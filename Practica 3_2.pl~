@@ -1,0 +1,39 @@
+hijo_de(justino,moises).
+hijo_de(justino,rafael).
+hijo_de(justino,alfredo).
+hijo_de(justino,justino2).
+hijo_de(justino,julio).
+hijo_de(julio,kevin).
+hijo_de(julio,pablo).
+hija_de(justino,rosalba).
+hija_de(justino,martha).
+hija_de(justino,norma).
+hija_de(justino,belia).
+hija_de(justino,lety).
+hija_de(justino,olga).
+hija_de(justino,lorena).
+
+tia(kevin,rosalba).
+tia(kevin,martha).
+tia(kevin,norma).
+tia(kevin,lety).
+tia(kevin,olga).
+tia(kevin,belia).
+tia(kevin,lorena).
+tia(pablo,rosalba).
+tia(pablo,martha).
+tia(pablo,norma).
+tia(pablo,lety).
+tia(pablo,olga).
+tia(pablo,belia).
+tia(pablo,lorena).
+
+hermano_y_hermana(H1,H2):- hijo_de(X,H1),hija_de(X,H2).
+hermano_varon(H1,H2):- hijo_de(X,H1),hijo_de(X,H2).
+hermano_hembra(H1,H2):- hija_de(X,H1),hija_de(X,H2).
+abuelo_de(H1,H2):- hijo_de(H1,X),hijo_de(X,H2).
+
+
+
+
+
